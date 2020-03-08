@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FLESHCONNECT</title>
+	<link rel="stylesheet" type="text/css" href="room.css">
+
+	<script>
+		navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+		.then(stream => video.srcObject = stream)
+		.catch(e => log(e.name + ": "+ e.message));
+
+		var log = msg => div.innerHTML += msg + "<br>";
+	</script>
+</head>
+<body>
+	<div id="main">
+		<header id="header">
+            <section id="left">
+                <h1>FLESHCONNECT</h1>
+            </section>
+            <section id="right">
+                <p>LOGGED IN</p>
+                <img alt="icon">
+            </section>
+		</header>
+		<div id="chatroom">
+			<div id="cam-container">
+				<div id="cam1" class="cam">
+					<video id="video" width="320" height="240" autoplay></video>
+				</div>
+				<div id="cam2" class="cam">
+				</div>
+			</div>
+			<div id="chat-container">
+                <form id="chat-history">
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+					</section>
+					<section class="message-container">
+						<input type="text" class="user2">
+						<input type="text" class="message"><br />
+					</section>
+				</form>
+				<form id="chat-submit">
+					<section class="submit-container">
+						<input type="text" class="user1">
+						<input type="text" class="message"><br />
+						<input type="submit" value="Submit">
+					</section>
+				</form>
+			</div>
+		</div>
+    </div>
+    <footer>
+		<p>Copyright (c) MEGATECH.BODY.Co Ltd -2020&mdash;2020 Anno Domini</p>
+	</footer>
+	<div id="div"></div>
+</body>
+</html>
+
+<!-- webcams will be widescreen format
+
+types of shots:
+1. whole webpage with the 2 cams and the chat, front facing
+2. the webcam view by itself
+
+aesthetics:
+ - glowing, airbrushed/fuzzy glow effect?
+ - dirty/pornogpaphic, hot pink and gray
+-->

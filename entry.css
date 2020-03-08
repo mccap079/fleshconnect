@@ -1,0 +1,148 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 960px;
+    height: 100%;
+    overflow-y: hidden;
+    margin: 0 auto;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+}
+
+#main {
+    position: relative;
+    float:center;
+
+    width: 960px;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+header {
+    padding: 1rem;
+}
+
+header #left{
+    display: inline;
+}
+
+header #right{
+    position: relative;
+    float:right;
+    width:auto;
+    margin-top:10px;
+}
+
+header h1 {
+    position: relative;
+    display: inline;
+}
+
+#right p{
+    display:inline;
+}
+
+#right img {
+    width:25px;
+    height:50px;
+    background:lightgray;
+}
+
+#chatroom{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#cam-container{
+    position: relative;
+    float:left;
+
+    background: gray;
+}
+
+.cam{
+    width:320px;
+    height:240px;
+
+    margin: 1rem;
+    background-color: rgb(0,0,0);
+}
+
+#intro-container{
+    position:relative;
+    float:left;
+
+    width:100%;
+    height:auto;
+}
+
+#cam2 > img{
+    max-width: 100%;
+    overflow:hidden;
+}
+
+#cam2 {
+    max-width: 100%;
+    overflow:hidden;
+
+}
+
+#intro-container{
+    position:relative;
+    float:left;
+    text-align:center;
+
+    background:lightgray;
+    border: solid 1px black;
+}
+
+form {
+    padding: 0 0 2rem 0;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding: 5px;
+
+    border: solid 1px gray;
+}
+
+.vert-center {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:100%;
+}
+
+footer{
+    /* position:fixed;
+    bottom:0;
+    display: flex;
+
+    width: 960px;
+    height: auto;
+
+    text-align: right;
+
+    padding: 1rem; */
+
+    position: relative;
+    float: left;
+
+    width:960px;
+    height: 50px;
+}
+
+footer p{
+    text-align: center;
+}

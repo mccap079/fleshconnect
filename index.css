@@ -1,0 +1,66 @@
+header {
+    position: relative;
+    float:none;
+    display:inline-block;
+
+    /* border: solid 1px gray; */
+}
+
+body {
+    /* background: rgb(71, 64, 71); */
+
+    width: 960px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    overflow-y: hidden;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+}
+
+main {
+    position: relative;
+    float:center;
+    text-align: center;
+
+    width: 960px;
+    height: 97vh;
+
+    margin: 0 auto;
+}
+
+#splashImg{
+    position:relative;
+    float: center;
+
+    width:250px;
+    height:350px;
+
+    margin: 0 auto;
+
+    border: solid 1px gray;
+    
+}
+
+#vertCenter {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    /* appearance: button-bevel; */
+
+    text-decoration: none;
+    color: initial;
+    padding: 5px;
+
+
+    border:solid 1px gray;
+}
